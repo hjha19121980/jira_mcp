@@ -1,0 +1,8 @@
+services:
+  jira-mcp:
+    build: .
+    image: jira-mcp:local
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
